@@ -1,0 +1,30 @@
+{
+    "1": {
+        "scrips": 10000,
+        "priced": "98.5",
+        "net_scripts": "98500",
+        "expiry": "14.09.2023",
+        "type": "xyz"
+    },
+    "2": {
+        "scrips": 50000,
+        "priced": "98.5",
+        "net_scripts": "98500",
+        "expiry": "14.09.2023",
+        "type": "xyz"
+    },
+    "3": {
+        "scrips": 60000,
+        "priced": "98.5",
+        "net_scripts": "98500",
+        "expiry": "14.09.2023",
+        "type": "xyz"
+    },
+    "4": {
+        "scrips": 80000,
+        "priced": "98.5",
+        "net_scripts": "98500",
+        "expiry": "14.09.2023",
+        "type": "xyz"
+    }
+}

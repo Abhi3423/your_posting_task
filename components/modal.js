@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 
 const SuccessModal = ({ children, successState }) => {
-  const [showModal, setShowModal] = useState(successState);
+  const [showModal] = useState(successState);
   return (
     <Fragment>
       {showModal ? (

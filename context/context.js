@@ -4,10 +4,9 @@ const Context = createContext();
 
 export function DataProvider({ children }) {
     const [popup, setpopup] = useState(false)
-    const [edit,setedit] = useState(false)
 
     return (
-        <Context.Provider value={{popup,edit,setpopup,setedit}}>{children}</Context.Provider>
+        <Context.Provider value={{popup,setpopup}}>{children}</Context.Provider>
     );
 }
 

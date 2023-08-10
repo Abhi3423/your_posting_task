@@ -1,17 +1,17 @@
 [
   {
     "scrips": 50000,
-    "priced": "98.5",
-    "net_scripts": "900",
+    "priced": "9.5",
+    "net_scripts": "2800",
     "expiry": "14.09.2023",
     "type": "xyz"
   },
   {
     "scrips": 50000,
     "priced": "98.5",
-    "net_scripts": "900",
+    "net_scripts": "2000",
     "expiry": "14.09.2023",
-    "type": "xyz"
+    "type": "xyjnisd"
   },
   {
     "scrips": 50000,

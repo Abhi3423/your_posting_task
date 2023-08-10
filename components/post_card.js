@@ -7,11 +7,10 @@ import Edit_Form from "./form";
 
 const Card = ({ Data, index}) => {
 
-    const { edit, setedit, popup, setpopup } = useDataContext();
+    const { popup, setpopup } = useDataContext();
     const [isCardEditing, setIsCardEditing] = useState(false);
 
     function handleEditClick() {
-        setedit(true);
         setIsCardEditing(true);
     }
 
@@ -19,7 +18,7 @@ const Card = ({ Data, index}) => {
         <Fragment>
             {isCardEditing
                 ?
-                <Edit_Form/>
+                <Edit_Form setCard={setIsCardEditing} Data={Data} index={index}/>
                 :
                 <div className='flex gap-8 text-center shadow-md border-2 rounded-md p-3'>
                     <div className='flex flex-col gap-2'>

@@ -45,6 +45,7 @@ const Edit_Form = ({ setCard, Data, index }) => {
     function handlesubmit() {
         updateData(index);
         setCard(false);
+        window.location.reload();
     }
 
     return (

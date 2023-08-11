@@ -27,10 +27,9 @@ export default function Home() {
 
     return (
         <Fragment>
-            <Navbar />
             <main className="flex min-h-screen flex-col gap-6 items-center p-24">
                 <h1 className='font-bold text-2xl'> Your Postings</h1>
-                <div className='flex flex-col gap-4 bg-white rounded-lg shadow-lg p-4'>
+                <div className='flex flex-col gap-4 bg-white rounded-3xl shadow-[#E2ECF940] shadow-2xl px-5 pt-8 pb-16'>
                     {Data.map((data, index) => (
                         <Card Data={data} index={index} />
                     ))}

@@ -7,7 +7,7 @@ import Edit_Form from "./form";
 
 const Card = ({ Data, index}) => {
 
-    const { popup, setpopup } = useDataContext();
+    const [ popup, setpopup ] = useState(false);
     const [isCardEditing, setIsCardEditing] = useState(false);
 
     function handleEditClick() {
@@ -20,7 +20,7 @@ const Card = ({ Data, index}) => {
                 ?
                 <Edit_Form setCard={setIsCardEditing} Data={Data} index={index}/>
                 :
-                <div className='flex gap-8 text-center shadow-md border-2 rounded-md p-3'>
+                <div className='flex flex-col sm:flex-row gap-8 text-center shadow-md border-2 rounded-md p-3'>
                     <div className='flex flex-col gap-2'>
                         <p className='font-bold'>Scrips Value</p>
                         <p className='text-sm'>Rs. {Data.scrips}</p>
@@ -100,7 +100,7 @@ const Card = ({ Data, index}) => {
 
             {popup && (
                 <SuccessModal successState={popup}>
-                    <Delete no={index} />
+                    <Delete setdisplay={setpopup} index={index} />
                 </SuccessModal>
             )}
         </Fragment>

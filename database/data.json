@@ -3,7 +3,7 @@
     "scrips": 50000,
     "priced": "90.5",
     "net_scripts": "2800",
-    "expiry": "14.09.2023",
+    "expiry": "11.08.2023",
     "type": "xyz"
   },
   {
@@ -22,7 +22,7 @@
   },
   {
     "scrips": 50000,
-    "priced": "98.5",
+    "priced": "98.525",
     "net_scripts": "900",
     "expiry": "14.09.2023",
     "type": "xyz"

@@ -1,16 +1,13 @@
 import { Fragment, React } from "react";
 import cancel from "../public/cancel.svg"
 import Image from "next/image";
-import { useDataContext } from "@/context/context";
 
 
-const Delete = ({ no }) => {
+const Delete = ({setdisplay, index }) => {
 
-    const { setpopup } = useDataContext();
-
-    async function deleteData(index) {
+    async function deleteData(number) {
         try {
-            const res = await fetch(`/api/data?index=${index}`, {
+            const res = await fetch(`/api/data?index=${number}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -30,8 +27,8 @@ const Delete = ({ no }) => {
 
 
     const handleDelete = () => {
-        deleteData(no)
-        setpopup(false);
+        deleteData(index)
+        setdisplay(false);
     };
 
 
@@ -42,7 +39,7 @@ const Delete = ({ no }) => {
                 <p>Are you sure ?</p>
                 <p>do you really want to delete this post ?</p>
                 <div className="flex gap-4">
-                    <button onClick={() => setpopup(false)} className="p-2 bg-gray-200 rounded-lg hover:bg-gray-700 hover:text-white">Cancel</button>
+                    <button onClick={() => setdisplay(false)} className="p-2 bg-gray-200 rounded-lg hover:bg-gray-700 hover:text-white">Cancel</button>
                     <button onClick={handleDelete} className="p-1 bg-red-400 rounded-lg hover:bg-red-700 hover:text-white">Delete</button>
                 </div>
             </div>
